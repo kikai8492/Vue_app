@@ -12,6 +12,10 @@ new Vue({
       { id: 2, name: '富永修司', course: 'Webエンジニアコース', acceptancePeriod: '2017年11月期' },
       { id: 3, name: '斉藤一起', course: 'Webエンジニアコース', acceptancePeriod: '2017年11月期' }
     ]
+  // data: {
+  //   name: '',
+  //   course: '',
+  //   acceptancePeriod: '',
   },
   // methodsに、Vue.jsのインスタンスに使用させたいメソッドを記載する
   methods: {
@@ -20,6 +24,13 @@ new Vue({
         // （入力欄に入力された値と、ID値（最後に登録されたID値+1の値）が新たに出現する機能）の処理を書く
         // this.students = this.students.split('').reverse().join('')
         // 以下にコードを書く
+        // <script setup>import { ref } from "module";const name = ref('');</script>
+      this.students.push({
+        id: this.students.length + 1,
+        name: this.name,
+        course: this.course,
+        acceptancePeriod: this.acceptancePeriod
+      })
     }
   }
 })
