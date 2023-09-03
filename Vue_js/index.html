@@ -20,7 +20,7 @@
             <ul>
                 <!-- v-for="student in students" で、配列studentsを一つ一つ切り出して変数studentに代入している -->
                 <!-- v-bind:key="student.id"は、切り出された各要素の一意性を確保するために使う -->
-                <li v-for="student in students" v-bind:key="student.id">
+                <li v-for="student in students" v-bind:key="student.id"> 
                     <!-- {{ }} のなかに書いた記述で、Vue.jsのデータの式展開が行える -->
                     ID {{student.id}} /
                     名前 {{student.name}} /

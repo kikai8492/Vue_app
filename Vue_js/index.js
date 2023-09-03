@@ -22,7 +22,7 @@ new Vue({
         // 以下にコードを書く
         // <script setup>import { ref } from "module";const name = ref('');</script>
       this.students.push({
-        id: this.students.length + 1,//配列数を取得して、それに+1した値をidとして設定するのでcountではなくlengthを使用する
+        id: this.students.length + 1 ,//要素数を取得して、それに+1した値をidとして設定するのでcountではなくlengthを使用する
         name: this.name, //htmlで記述してあるv-modelで取得した値をnameに代入する
         course: this.course, //htmlで記述してあるv-modelで取得した値をcourseに代入する
         acceptancePeriod: this.acceptancePeriod //htmlで記述してあるv-modelで取得した値をacceptancePeriodに代入する
